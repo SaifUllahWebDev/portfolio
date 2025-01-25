@@ -239,46 +239,54 @@ svg path{
     transition: all .3s ease-in-out;
 }
 
-.all h4 {
+.all button {
     position: absolute;
-    bottom: 0px;
-    left: 5px;
+    bottom: 10px;
+    left: 10px;
+    background-color: transparent;
     z-index: -1;
+    border: none;
+
     border-radius: 24px;
     padding: 45px;
     transition: all .3s ease-in-out;
     backdrop-filter: blur(50px);
         
 }
-.figma h4 {
+.figma button {
     position: absolute;
-    bottom: 0px;
-    left: px;
+    bottom: 10px;
+    left: 0px;
+    z-index: -1;
+    background-color: transparent;
+    border-radius: 24px;
+    border: none;
+
+    padding: 35px;
+    transition: all .3s ease-in-out;
+    backdrop-filter: blur(10px);
+}
+.back button {
+    position: absolute;
+    bottom: 10px;
+    left:0px;
+    background-color: transparent;
+    border: none;
     z-index: -1;
     border-radius: 24px;
     padding: 35px;
     transition: all .3s ease-in-out;
     backdrop-filter: blur(10px);
 }
-.back h4 {
-    position: absolute;
-    bottom: 0px;
-    left:px;
-    z-index: -1;
-    border-radius: 24px;
-    padding: 35px;
-    transition: all .3s ease-in-out;
-    backdrop-filter: blur(10px);
-}
-.all:hover h4{
+.all:hover button{
     z-index: 1;
     transform: scale(1.1);
 }
-.figma:hover h4{
+.figma:hover button{
     z-index: 1;
     transform: scale(1.1);
 }
-.back:hover h4{
+.back:hover button{
     z-index: 1;
     transform: scale(1.1);
 }
@@ -390,6 +398,13 @@ svg path{
     z-index: -1;
     opacity: 0.8; /* Default visibility */
     transition: all 0.4s ease-in-out; /* Smooth transition */
+}
+
+.front{
+    display: block;
+}
+.backs {
+    display: block;
 }
 
 /* PROJECT SECTION ENDS */

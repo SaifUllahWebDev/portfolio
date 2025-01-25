@@ -1,0 +1,70 @@
+<div class="options">
+  <div class="all">
+    <img src="images/rocket.webp" alt>
+    <button onclick="all()">ALL</button>
+  </div>
+  <div class="figma">
+    <img src="images/figma.webp" alt>
+    <button onclick="frontend()">Front-End</button>
+  </div>
+  <div class="back">
+    <img src="images/suitcase.webp" alt>
+    <button onclick="backend()">Back-End</button>
+  </div>
+</div>
+
+<div class="content">
+  <div class="front">This is a front-end project</div>
+  <div class="front">Another front-end project</div>
+  <div class="back">This is a back-end project</div>
+  <div class="back">Another back-end project</div>
+</div>
+
+  
+  <script>
+   function frontend() {
+  const frontElements = document.getElementsByClassName("front");
+  const backElements = document.getElementsByClassName("back");
+
+  // Hide back-end projects
+  for (let i = 0; i < backElements.length; i++) {
+    backElements[i].style.display = "none";
+  }
+
+  // Show front-end projects
+  for (let i = 0; i < frontElements.length; i++) {
+    frontElements[i].style.display = "block";
+  }
+}
+
+function backend() {
+  const frontElements = document.getElementsByClassName("front");
+  const backElements = document.getElementsByClassName("back");
+
+  // Hide front-end projects
+  for (let i = 0; i < frontElements.length; i++) {
+    frontElements[i].style.display = "none";
+  }
+
+  // Show back-end projects
+  for (let i = 0; i < backElements.length; i++) {
+    backElements[i].style.display = "block";
+  }
+}
+
+function all() {
+  const frontElements = document.getElementsByClassName("front");
+  const backElements = document.getElementsByClassName("back");
+
+  // Show all projects
+  for (let i = 0; i < frontElements.length; i++) {
+    frontElements[i].style.display = "block";
+  }
+
+  for (let i = 0; i < backElements.length; i++) {
+    backElements[i].style.display = "block";
+  }
+}
+
+  </script>
+  
